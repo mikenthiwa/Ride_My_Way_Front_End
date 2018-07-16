@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+		<link rel="stylesheet" href="index.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+
+</head>
+<body>
+	<header>
+			<div class="main">
+				<div class="logo">
+					<ul>
+						<li>Ride-My-Way</li>
+					</ul>
+				</div>
+					<ul>
+						<input type="text" placeholder="rides...">
+						<li class="active"><a href="home_user.html">Rides</a></li>
+						<li><a href="profile.html">Profile</a></li>
+						<li><a href="login_form.html">Logout</a></li>
+					</ul>
+			</div>
+	</header>
+	
+	<div class="clear"></div>
+	
+	<div class="container">
+		<div class="center">
+			<h2>Rides available</h2>
+			<table class="ridetable">
+				<thead>
+					
+             <th> Route </th>
+             <th> Ride Id </th>
+             <th> Driver Name </th>
+             <th> Registration plate </th>
+						 <th> Vehicle Model </th>
+						 <th> Vehicle Capacity </th>
+						 <th> Status </th>
+           
+					</thead>
+				<tbody>
+					<tr class="breakrow">
+						<td>Syokimau - Nairobi</td>
+						<td></td>
+					</tr>
+						<tr class="metadata">
+						<td class="check"></td>
+						<td>1</td>
+						<td><a href="#">Micheal Mutua</a></td>
+						<td class="call">KCN 548F</a></td>
+						<td>Toyota</td>
+						<td>4</td>
+						<td>Available</td>
+						</tr>	
+					</tr>
+				</tbody>
+				
+				<tbody>
+					<tr class="breakrow">
+						<td>Nairobi - Westlands</td>
+						<td></td>
+					</tr>
+					<tr class="metadata">
+						<td class="check"></td>
+						<td>2</td>
+						<td><a href="#">Ted Kavoo</a></td>
+						<td>KCA 976G</td>
+						<td class="call">Noah</td>
+						<td>6</td>
+						<td>available</td>
+					</tr>
+					
+					
+				</tbody>
+				
+			</table>	
+		</div>
+	</div>
+	
+	<footer>
+		<li><a href="login_form.html">Logout</a></li>
+		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
+	</footer> 
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		
+		//collapse and expand sections
+		$('.breakrow').click(function(){
+			
+			$(this).nextUntil('tr.breakrow').animate({height: "toggle", opacity: "toggle"}, "slow");
+		})
+	})
+		
+	$(document).ready(function() {
+		$('.check').click(function(){
+				$(this).nextUntil('tr.call').css("color", "green" );
+						
+		})
+})
+</script>
+
+</body>
+</html>
