@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
@@ -12,22 +12,25 @@
 <body>
 	<div class="box">
 		<h2>Login</h2>
-		<form action="home_user.html">
+		<h3 id="flash"></h3>
+
+		<form id="loginForm">
 			<div class="inputBox">
-				<input type="email" name="" required="">
+				<input id="loginEmail" type="email" name="" required="">
 				<label>email</label>
 			</div>
 			<div class="inputBox">
-				<input type="password" name="" required="">
+				<input type="password" id="loginPassword" name="" required="">
 				<label>password</label>
 
 			</div>
-			<input type="submit" name="" value="Login">
+			<input type="submit" id="loginButton" name="" value="Login">
 			<p><i>create account ? </i><a href="register_form.html">Register</a></p>
 			<p><a href="index.html"> Back Home >></a></p>
 
 		</form>
 	</div>
 
+	<script src="signin.js"></script>
 </body>
 </html>

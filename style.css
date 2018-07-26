@@ -66,7 +66,7 @@ body{
 	font-size: 16px;
 	color: #fff;
 	pointer-events: none;
-	transition: .5%;
+	transition: opacity;
 	font-family: roboto;
 }
 
@@ -75,7 +75,7 @@ body{
 	top: -18px;
 	left: 0;
 	color: #03a9f4;
-	font: -size: 12px;	
+	font-size: 12px;
 }
 
 .box input[type="checkbox"]{
