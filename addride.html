@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+		<link rel="stylesheet" href="index.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+			<div class="main">
+				<div class="logo">
+					<ul>
+						<li><a href="#">Ride-My-Way</a></li>
+						<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+						<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+					</ul>
+				</div>
+					<ul>
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li class="active"><a href="myRides.html">myRides</a></li>
+						<li><a href="profile.html">Profile</a></li>
+						<li><a href="login_form.html">Logout</a></li>
+					</ul>
+			</div>
+	</header>
+	
+	<div class="clear"></div>
+	<div class="container">
+		<div class="center">
+			<h2>Add Ride</h2>
+			<h3 id="flash"></h3>
+			<form id="addRideForm">
+				<div class="inputBox">
+					<input id="rideRoute" type="text" name="" required="" placeholder="Routes">
+				</div>
+
+				<div class="inputBox">
+					<input id="registrationNumber" type="text" name="" required="" placeholder="registration number">
+				</div>
+
+				<div class="inputBox">
+					<input id="vehicleModel" type="text" name="" required="" placeholder="vehicle model">
+				</div>
+
+				<div class="inputBox">
+					<input id="vehicleCapacity" type="text" name="" required="" placeholder="vehicle capacity">
+				</div>
+
+				<input type="submit" name="" value="Add Ride">
+			</form>
+		</div>
+	</div>
+	
+	<footer>
+		<li><a href="login_form.html">Logout</a></li>
+		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
+	</footer>
+
+	<script src="postride.js"></script>
+
+</body>
+</html>

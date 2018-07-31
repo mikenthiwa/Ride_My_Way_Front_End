@@ -20,8 +20,9 @@
 					</ul>
 				</div>
 					<ul>
-						<input type="text" placeholder="rides...">
-						<li class="active"><a href="home_user.html">Rides</a></li>
+
+						<li class="active"><a href="home_user.html" id="rides">Rides</a></li>
+						<li><a href="ride.html" id="ride">Ride</a></li>
 						<li><a href="profile.html">Profile</a></li>
 						<li><a href="login_form.html">Logout</a></li>
 					</ul>
@@ -33,56 +34,45 @@
 	<div class="container">
 		<div class="center">
 			<h2>Rides available</h2>
-			<table class="ridetable">
+			<table class="ridetable" id="rideTable">
+
 				<thead>
-					
-             <th> Route </th>
-             <th> Ride Id </th>
-             <th> Driver Name </th>
-             <th> Registration plate </th>
-						 <th> Vehicle Model </th>
-						 <th> Vehicle Capacity </th>
-						 <th> Status </th>
+
+					 <th> Route </th>
+					 <th> Ride Id </th>
+					 <th> Driver Name </th>
+					 <th> Registration plate </th>
+					 <th> Vehicle Model </th>
+					 <th> Vehicle Capacity </th>
+					 <th> Status </th>
            
 					</thead>
-				<tbody>
-					<tr class="breakrow">
-						<td>Syokimau - Nairobi</td>
-						<td></td>
-					</tr>
-						<tr class="metadata">
-						<td class="check"></td>
-						<td>1</td>
-						<td><a href="#">Micheal Mutua</a></td>
-						<td class="call">KCN 548F</a></td>
-						<td>Toyota</td>
-						<td>4</td>
-						<td>Available</td>
-						</tr>	
-					</tr>
+
+				<tbody id="rideOffered">
+
 				</tbody>
 				
-				<tbody>
-					<tr class="breakrow">
-						<td>Nairobi - Westlands</td>
-						<td></td>
-					</tr>
-					<tr class="metadata">
-						<td class="check"></td>
-						<td>2</td>
-						<td><a href="#">Ted Kavoo</a></td>
-						<td>KCA 976G</td>
-						<td class="call">Noah</td>
-						<td>6</td>
-						<td>available</td>
-					</tr>
-					
-					
-				</tbody>
-				
-			</table>	
+			</table>
+
+			<div id="get_ride">
+				<form id="getRideForm">
+					<input id="getRideInput" type="number" placeholder="ride id">
+					<input id="getRideButton" type="submit">
+				</form>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="RideDet">
+				<ul id="rideDetails"></ul>
+			</div>
+
 		</div>
+
+
 	</div>
+
+
 	
 	<footer>
 		<li><a href="login_form.html">Logout</a></li>
@@ -98,7 +88,7 @@
 			
 			$(this).nextUntil('tr.breakrow').animate({height: "toggle", opacity: "toggle"}, "slow");
 		})
-	})
+	});
 		
 	$(document).ready(function() {
 		$('.check').click(function(){
@@ -107,6 +97,7 @@
 		})
 })
 </script>
-
+<script src="rides.js"></script>
+<script src="ride.js"></script>
 </body>
 </html>
