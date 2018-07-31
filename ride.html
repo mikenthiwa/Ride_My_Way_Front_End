@@ -1,57 +1,60 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-		<link rel="stylesheet" href="index.css">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Ride</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
 </head>
 <body>
-	<header>
+    <header>
 			<div class="main">
 				<div class="logo">
 					<ul>
-						<li><a href="#">Ride-My-Way</a></li>
-						<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-						<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-
+						<li>Ride-My-Way</li>
 					</ul>
 				</div>
+
 					<ul>
-						<li><a href="dashboard.html">Dashboard</a></li>
-						<li class="active"><a href="rides.html">myRides</a></li>
+						<li><a href="home_user.html" id="rides">Rides</a></li>
+                        <li class="active"><a href="ride.html" id="ride">Ride</a></li>
 						<li><a href="profile.html">Profile</a></li>
 						<li><a href="login_form.html">Logout</a></li>
 					</ul>
 			</div>
 	</header>
-	
-	<div class="clear"></div>
+
+    <div class="clear"></div>
+
 	<div class="container">
 		<div class="center">
-			<h2>Add Ride</h2>
-			<form>
-				<div class="inputBox">
-				
-				<input type="text" name="", required="", placeholder="Routes">
-			</div>
-			<div class="inputBox">
-				<input type="text" name="", required="", placeholder="name">
-				
-			</div>
-			<div class="inputBox">
-				<input type="password" name="", required="", placeholder="time">
-			</div>
-			<input type="submit" name="", value="Add Ride">
-			</form>
-		</div>
-	</div>
-	
-	<footer>
-		<li><a href="login_form.html">Logout</a></li>
-		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
-	</footer>       
 
+            <h2>Enter ride id to get information of a single ride</h2>
+			<div>
+				<form id="getRideForm">
+					<input id="getRideInput" type="number" placeholder="ride id">
+                    <input id="getRideButton" type="submit">
+
+
+				</form>
+
+			</div>
+
+            <div id="rideDiv">
+                    <table id="rideDetails">
+
+                    </table>
+                </div>
+
+
+		</div>
+
+
+	</div>
+
+    <script src="ride.js"></script>
 </body>
 </html>

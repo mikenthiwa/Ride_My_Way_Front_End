@@ -47,29 +47,9 @@
 					<td>7:00am</td>
 					<td><a class="accept" href="#">Accept</a><br><a class="reject" href="#">Reject</a></td>
 				</tbody>
-				<tbody>
-					<td>2</td>
-					<td>Westlands - Langata</td>
-					<td>Micheal Mutua</td>
-					<td>10:00am</td>
-					<td><a class="accept" href="#">Accept</a><br><a class="reject" href="#">Reject</a></td>
-				</tbody>
-				<tbody>
-					<td>3</td>
-					<td>Nairobi - Komarock</td>
-					<td>Micheal Mutua</td>
-					<td>12:00am</td>
-					<td><a class="accept" href="#">Accept</a><br><a class="reject" href="#">Reject</a></td>
-				</tbody>
-				<tbody>
-					<td>4</td>
-					<td>Lavington - Yaya Center</td>
-					<td>Micheal Mutua</td>
-					<td>2:00pm</td>
-					<td><a class="accept" href="#">Accept</a><br><a class="reject" href="#">Reject</a></td>
-				</tbody>
+
 			</table>
-			<form action="ride.html">
+			<form action="addride.html">
 				<button>Add Ride</button>
 			</form>
 		</div>
@@ -86,7 +66,7 @@
 	
 		$(".accept").active(function(){
 				//$(this).nextUntil('td.accept').css("color", "red" );
-			$("td.accept").css("color": "red");
+			$("td.accept").css({"color": "red"});
 		})
 	
 		
