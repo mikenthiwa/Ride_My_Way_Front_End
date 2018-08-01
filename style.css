@@ -78,6 +78,17 @@ body{
 	font-size: 12px;
 }
 
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .box input[type="checkbox"]{
 	color: red;
 	margin-bottom: 25px;
