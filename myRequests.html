@@ -20,7 +20,7 @@
 				</div>
 					<ul>
 						<li><a href="dashboard.html">Dashboard</a></li>
-						<li class="active"><a href="myRides.html">myRides</a></li>
+						<li class="active"><a href="myRequests.html">Requests</a></li>
 						<li><a href="driver_profile.html">Profile</a></li>
 						<li><a href="Login_Form.html">Logout</a></li>
 					</ul>
@@ -30,31 +30,37 @@
 	<div class="clear"></div>
 	<div class="container">
 		<div class="center">
-			<h2>Rides offered</h2>
-			<table class="ridetable">
-					<tr>
-             <th width="10%"> Id </th>
-             <th width="35%"> Rides </th>
-             <th width="35%"> Driver </th>
-             <th width="20%"> Time </th>
-						<th width="10%"></th>
-           </tr>
-				<tbody class="row">
-					
-					<td>1</td>
-					<td>Syokimau-Nairobi</td>
-					<td>Micheal Mutua</td>
-					<td>7:00am</td>
-					<td><a class="accept" href="#">Accept</a><br><a class="reject" href="#">Reject</a></td>
-				</tbody>
+			<h2>List of all requested rides</h2>
+			<p>Enter ride id to get all requested rides of that particular ID</p>
+			<div>
+				<form id="requestRidesForm">
+					<input id="rideId" class="requestInput" type="number" placeholder="ride id">
+                    <input id="requestedRideButton" class="requestButton" type="submit">
+				</form>
 
-			</table>
-			<form action="addride.html">
-				<button>Add Ride</button>
-			</form>
+
+				<table class="ridetable">
+					<tr id="requestTableHeaders"></tr>
+					<tbody class="row" id="requestData"></tbody>
+				</table>
+
+				<div id="accept_requestDiv">
+					<p>Accept or reject a request via request ID</p>
+					<form id="accept_requestForm">
+						<input id="acceptRide_Id" class="requestInput" type="number" placeholder="ride id"><br>
+						<input id="requestId" class="requestInput" type="number" placeholder="request id"><br>
+						<input id="acceptButton" class="requestButton" type="submit" value="accept">
+						<input id="rejectButton" class="requestButton" type="submit" value="reject">
+					</form>
+				</div>
+
+				<form action="addride.html">
+					<button>Add Ride</button>
+				</form>
 		</div>
 	</div>
-	
+	</div>
+
 	<footer>
 		<li><a href="login_form.html">Logout</a></li>
 		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
@@ -68,10 +74,10 @@
 				//$(this).nextUntil('td.accept').css("color", "red" );
 			$("td.accept").css({"color": "red"});
 		})
-	
-		
-		
+
 	</script>
+
+	<script src="requested_rides.js"></script>
 
 </body>
 </html>
