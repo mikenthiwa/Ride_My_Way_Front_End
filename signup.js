@@ -24,17 +24,18 @@ function register(e) {
             body: JSON.stringify({"username": username, "email": email, "password": password, "is_driver": is_driver})
         })
             .then((res) => res.json())
+            .catch(err => console.error(err))
             .then(data => {
-                if (data[0]["msg"] === 'Your account has been successfully created') {
-                    document.getElementById('flash').innerHTML = data[0]["msg"];
-                    window.location.replace('login_form.html')
-                }
-                else {
-                    document.getElementById('flash').innerHTML = data[0]["msg"];
+                if (data[1] === 201) {
+                    document.getElementById('flash').innerHTML = data[0]["msg"]
 
                 }
+                else {
+                    document.getElementById('flash').innerHTML = data["msg"];
+                }
             })
-    }else {
+    }
+    else {
           document.getElementById('flash').innerHTML = "Passwords don't match";
 
 
