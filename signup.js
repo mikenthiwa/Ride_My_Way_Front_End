@@ -35,7 +35,7 @@ function register(e) {
                 }
             })
     }else {
-          document.getElementById('flash').innerHTML = 'Passwords don"t; match';
+          document.getElementById('flash').innerHTML = "Passwords don't match";
 
 
     }
