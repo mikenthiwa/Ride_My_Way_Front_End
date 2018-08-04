@@ -14,15 +14,21 @@ function getRide(e) {
 
         .then(res => res.json())
         .then(data => {
+            if (data["msg"]){
 
-            let outpout = `<tr><td> Ride Id: ${data["ride_id"]}</td></tr>
-                           <tr><td>Route: ${data["route"]}</td></tr>
-                           <tr><td>Driver: ${data["driver"]}</td></tr>
-                           <tr><td>Vehicle_Model: ${data["vehicle_model"]}</td></tr>
-                            <tr><td>Vehicle Capacity: ${data["vehicle_capacity"]}</td></tr>
-                            <tr><td>Status: ${data["status"]}</td></tr>`;
-            console.log(data["ride_id"]);
-            document.getElementById('rideDetails').innerHTML = outpout
+                document.getElementById('flash').innerHTML = data["msg"]
+            }else {
+                console.log(data);
+                document.getElementById('rideID').innerHTML = data["ride_id"];
+                document.getElementById('route').innerHTML = data["route"];
+                document.getElementById('driver').innerHTML = data["driver"];
+                document.getElementById('vehicleModel').innerHTML = data["vehicle_model"];
+                document.getElementById('vehicleCapacity').innerHTML = data["vehicle_capacity"];
+                document.getElementById('status').innerHTML = data["status"]
+
+            }
+
+
         })
 }
 

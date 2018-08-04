@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	background-color: #fff8b2;
 }
+
 .logo{
 	float: left;
 	height: auto;
@@ -17,7 +18,7 @@ body{
 	font-weight: 700;
 }
 
-ul{
+.main ul{
 	float: right;
 	list-style-type: none;
 }
@@ -26,9 +27,6 @@ ul input{
 	padding: 3px;
 	border-radius: 3px;
 	border: 1px solid grey;
-	
-	
-	
 }
 
 ul li{
@@ -68,9 +66,18 @@ ul li.active a{
 
 .center h2{
 	color: #f2e318;
-	font-size: 30px;
-	font-family: roboto;
-	letter-spacing: 2px
+	font-size: xx-large;
+	font-family: "Times New Roman";
+	letter-spacing: 3px;
+	text-shadow: 1px 1px #f7ce04;
+}
+
+#rideTable{
+	padding: 3px 0;
+}
+
+hr{
+	margin-bottom: 1.5em;
 }
 
 .center p{
@@ -96,8 +103,8 @@ ul li.active a{
 	background-image: url(images/index1.jpg);
 	background-size: cover;
 	background-size: 100% 100%;
-	padding-top: 50px;
-  padding-bottom: 150px;
+	padding-top: 5px;
+  	padding-bottom: 150px;
 }
 
 .center {
@@ -109,6 +116,7 @@ ul li.active a{
 
 .center h1{
 	text-align: center;
+
 }
 
 
@@ -119,8 +127,6 @@ table{
 	letter-spacing: 1px;
 	width: 100%;
 	margin-bottom: 20px;
-
-	
 }
 
 table th{
@@ -155,7 +161,6 @@ table tbody .metadata{
 
 }
 
-
 .ridetable a{
 	color: white;
 	text-decoration: none;
@@ -165,8 +170,6 @@ table tbody .metadata{
 	color: #f2e318;
 	text-decoration: underline;
 }
-
-
 
 .profiletable{
 	width: 600px;
@@ -188,13 +191,6 @@ table tbody .metadata{
 	outline: none;
 	
 }
-
-#RideDet{
-	float: left;
-}
-
-
-
 
 
 /* css for addride.html */
@@ -220,11 +216,69 @@ table tbody .metadata{
 #getRideButton{
 	width: 15%;
 
+}
+
+#ridesDiv{
+	margin: 3.5em 0 0 10.5em;
+}
+
+#ridesDiv p{
+	color: white;
+	font-size: 18px;
+	font-family: roboto;
+	letter-spacing: 2px;
 
 }
 
+
+
+#getRideForm input[type="submit"]{
+	background: blue;
+	height: 2.5em;
+	border-radius: 6px;
+	border-color: orange;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 1px #73767D;
+	letter-spacing: 1px;
+	color: white;
+}
+
+#getRideForm input[type="submit"]:hover{
+	background-color: darkblue;
+}
+
 #rideDiv{
-	margin-top: 0px;
+	margin-left: 35em;
+	margin-top: -9em;
+	width: 40%;
+}
+#rideDetails{
+	width: 50%;
+	text-align: left;
+	height: 20px;
+	letter-spacing: 1px;
+}
+
+fieldset{
+	border-radius: 5px;
+}
+#rideDiv legend{
+	background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+	font-size: 17px;
+	font-family: roboto;
+}
+#rideDiv .rideData{
+	border-bottom: 1px solid #6C6C6C;
+	width: 100%;
+	padding: 5px 0;
+}
+fieldset label{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 17px;
+	font-family: roboto;
 }
 
 .center .inputBox input{

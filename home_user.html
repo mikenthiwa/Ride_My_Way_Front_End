@@ -20,7 +20,6 @@
 					</ul>
 				</div>
 					<ul>
-
 						<li class="active"><a href="home_user.html" id="rides">Rides</a></li>
 						<li><a href="ride.html" id="ride">Ride</a></li>
 						<li><a href="profile.html">Profile</a></li>
@@ -34,40 +33,48 @@
 	<div class="container">
 		<div class="center">
 			<h2>Rides available</h2>
+			<hr>
 			<table class="ridetable" id="rideTable">
-
-				<thead>
-
-					 <th> Route </th>
-					 <th> Ride Id </th>
-					 <th> Driver Name </th>
-					 <th> Registration plate </th>
-					 <th> Vehicle Model </th>
-					 <th> Vehicle Capacity </th>
-					 <th> Status </th>
-           
-					</thead>
-
-				<tbody id="rideOffered">
-
-				</tbody>
-				
+				<thead id="table_headers"></thead>
+				<tbody id="rideOffered"></tbody>
 			</table>
-
-			<div id="get_ride">
-				<form id="getRideForm">
-					<input id="getRideInput" type="number" placeholder="ride id">
-					<input id="getRideButton" type="submit">
-				</form>
-			</div>
-
-			<div class="clear"></div>
-
-			<div id="RideDet">
-				<ul id="rideDetails"></ul>
-			</div>
+			<hr>
 
 		</div>
+
+		<div id="ridesDiv">
+			<p>Enter ride id to get more<br> information on the ride offered</p>
+			<form id="getRideForm">
+				<p id="flash" style="color: red; font-size: medium; "></p>
+
+					<input id="getRideInput" type="number" placeholder="ride id" required>
+
+
+					<input id="getRideButton" type="submit">
+
+			</form>
+		</div>
+		<fieldset id="rideDiv">
+			<legend>Ride details</legend>
+			<div class="rideData">
+				<label >Ride Id</label> <label id="rideID" style="margin-left: 14em"></label>
+			</div>
+			<div class="rideData">
+				<label>Route</label><label id="route" style="margin-left: 10em"></label>
+			</div>
+			<div class="rideData">
+				<label>Driver</label><label id="driver" style="margin-left: 14em"></label>
+			</div>
+			<div class="rideData">
+				<label>Vehicle Model</label><label id="vehicleModel" style="margin-left: 8em"></label>
+			</div>
+			<div class="rideData">
+				<label>Vehicle Capacity</label><label id="vehicleCapacity" style="margin-left: 9em"></label>
+			</div>
+			<div class="rideData">
+				<label>Status</label><label id="status" style="margin-left: 13em"></label>
+			</div>
+		</fieldset>
 
 
 	</div>

@@ -1,3 +1,4 @@
+
 document.getElementById('signUpPassenger').addEventListener('submit', register);
 
 function register(e) {
@@ -28,7 +29,6 @@ function register(e) {
             .then(data => {
                 if (data[1] === 201) {
                     document.getElementById('flash').innerHTML = data[0]["msg"]
-
                 }
                 else {
                     document.getElementById('flash').innerHTML = data["msg"];
