@@ -25,7 +25,7 @@ function getRides(e) {
             data.forEach(function (route) {
                 routes += `<a href="myRequests.html"><tr class="breakrow"> 
                                                 <td>${route.route}</td>
-                                                <td>${route.ride_id}</td>
+                                                <td id="data">${route.ride_id}</td>
                                                 <td>${route.driver}</td>
                                                 <td>${route.registration_plate}</td>
                                                 <td>${route.vehicle_model}</td>

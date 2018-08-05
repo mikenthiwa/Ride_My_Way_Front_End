@@ -15,16 +15,16 @@ function getRide(e) {
         .then(res => res.json())
         .then(data => {
             if (data["msg"]){
-
                 document.getElementById('flash').innerHTML = data["msg"]
             }else {
-                console.log(data);
                 document.getElementById('rideID').innerHTML = data["ride_id"];
                 document.getElementById('route').innerHTML = data["route"];
                 document.getElementById('driver').innerHTML = data["driver"];
                 document.getElementById('vehicleModel').innerHTML = data["vehicle_model"];
                 document.getElementById('vehicleCapacity').innerHTML = data["vehicle_capacity"];
-                document.getElementById('status').innerHTML = data["status"]
+                document.getElementById('status').innerHTML = data["status"];
+
+
 
             }
 

@@ -21,7 +21,6 @@
 				</div>
 					<ul>
 						<li class="active"><a href="home_user.html" id="rides">Rides</a></li>
-						<li><a href="ride.html" id="ride">Ride</a></li>
 						<li><a href="profile.html">Profile</a></li>
 						<li><a href="login_form.html">Logout</a></li>
 					</ul>
@@ -49,10 +48,24 @@
 
 					<input id="getRideInput" type="number" placeholder="ride id" required>
 
-
-					<input id="getRideButton" type="submit">
+					<input id="getRideButton" class="btn" type="submit">
 
 			</form>
+			<div id="requestDiv">
+				<form id="requestForm">
+					<p>Want to join a ride ? <br> Enter ride id, pickup point and time</p>
+					<p id="requestflash" style="color: green; font-size: medium;" ></p>
+
+                        <input id="requestRideId" class="requestInput" type="number" placeholder="ride id" required>
+
+                        <input id="pickUpPoint" class="requestInput" type="text" placeholder="pick up point" required><br>
+
+                        <input id="time" class="requestInput" type="text" placeholder="time" required><br>
+
+                        <input id="requestButton" class="btn" type="submit" style="padding: 5px 50px" value="join">
+
+				</form>
+			</div>
 		</div>
 		<fieldset id="rideDiv">
 			<legend>Ride details</legend>
@@ -74,7 +87,9 @@
 			<div class="rideData">
 				<label>Status</label><label id="status" style="margin-left: 13em"></label>
 			</div>
+
 		</fieldset>
+
 
 
 	</div>
@@ -106,5 +121,6 @@
 </script>
 <script src="rides.js"></script>
 <script src="ride.js"></script>
+<script src="request.js"></script>
 </body>
 </html>

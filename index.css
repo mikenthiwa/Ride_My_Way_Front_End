@@ -108,10 +108,12 @@ hr{
 }
 
 .center {
-    margin: auto;
-    width: 70%;
+    /*margin: auto;*/
+	float: right;
+    width: 65%;
     margin-top: 10px;
 	text-align: center;
+	margin-right: 1em;
 }
 
 .center h1{
@@ -219,7 +221,7 @@ table tbody .metadata{
 }
 
 #ridesDiv{
-	margin: 3.5em 0 0 10.5em;
+	margin: 8em 0 0 1.5em;
 }
 
 #ridesDiv p{
@@ -232,24 +234,28 @@ table tbody .metadata{
 
 
 
-#getRideForm input[type="submit"]{
+.btn{
 	background: blue;
 	height: 2.5em;
 	border-radius: 6px;
 	border-color: orange;
-	cursor: pointer;
 	box-shadow: 2px 2px 2px 1px #73767D;
 	letter-spacing: 1px;
 	color: white;
+	cursor: pointer;
+}
+#getRideForm .btn{
+	cursor: pointer;
+
 }
 
-#getRideForm input[type="submit"]:hover{
+.btn:hover{
 	background-color: darkblue;
 }
 
 #rideDiv{
-	margin-left: 35em;
-	margin-top: -9em;
+	margin-left: 28.5em;
+	margin-top: -22em;
 	width: 40%;
 }
 #rideDetails{
@@ -333,7 +339,7 @@ footer p.copyright {
 /* requestRide.html */
 
 #requestDiv{
-	text-align: center;
+	margin-top: 3em;
 }
 
 .input_box{
@@ -359,10 +365,7 @@ footer p.copyright {
 	margin-left: 23px;
 }
 
-.input_box #requestButton{
-	width: 20%;
-	height: 50px;
-}
+
 
 #flash{
     color: green;
@@ -382,11 +385,15 @@ footer p.copyright {
 	border-radius: 2px;
 	padding: 2px;
 }
+#requestForm #requestflash{
+	color: green;
 
-#requestRidesForm .requestButton{
-    width: 10%;
-    margin-right: 10px;
 }
+
+/*#requestRidesForm .requestButton{*/
+    /*width: 10%;*/
+    /*margin-right: 10px;*/
+/*}*/
 
 #accept_requestForm .requestButton{
     width: 10%;
