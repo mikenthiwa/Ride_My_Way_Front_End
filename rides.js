@@ -10,7 +10,6 @@ function getRides(e) {
     })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
             if (data["msg"]){
                 document.getElementById('rideOffered').innerHTML = `<p style="color: white; padding: 10px; font-size: large">${data["msg"]}</p>`
             }

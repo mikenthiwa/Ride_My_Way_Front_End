@@ -20,6 +20,7 @@
 				</div>
 					<ul>
 						<li><a href="dashboard.html">Dashboard</a></li>
+						<li><a href="addride.html">add ride</a></li>
 						<li class="active"><a href="myRequests.html">Requests</a></li>
 						<li><a href="driver_profile.html">Profile</a></li>
 						<li><a href="Login_Form.html">Logout</a></li>
@@ -29,37 +30,38 @@
 	
 	<div class="clear"></div>
 	<div class="container">
-		<div class="center">
-			<h2>List of all requested rides</h2>
-			<p>Enter ride id to get all requested rides of that particular ID</p>
-			<div>
+		<div class="requestCenter">
+			<h2>Requested rides</h2>
+			<p>Ride_My_Way allows you to view all the rides that have been requested<br>
+				after creating them</p>
 				<form id="requestRidesForm">
+					<p>You can also filter your requests by ID</p>
 					<input id="rideId" class="requestInput" type="number" placeholder="ride id">
-                    <input id="requestedRideButton" class="requestButton" type="submit">
+					<input id="requestedRideButton" class="btn" type="submit" value="filter">
 				</form>
-
-
-				<table class="ridetable">
+				<table class="requesttable">
 					<tr id="requestTableHeaders"></tr>
 					<tbody class="row" id="requestData"></tbody>
 				</table>
+		</div>
 
-				<div id="accept_requestDiv">
-					<p>Accept or reject a request via request ID</p>
-					<form id="accept_requestForm">
-						<input id="acceptRide_Id" class="requestInput" type="number" placeholder="ride id"><br>
-						<input id="requestId" class="requestInput" type="number" placeholder="request id"><br>
-						<input id="acceptButton" class="requestButton" type="submit" value="accept">
-						<input id="rejectButton" class="requestButton" type="submit" value="reject">
-					</form>
-				</div>
+		<div id="accept_requestDiv">
+			<p>To accept or reject a ride, enter the ride<br> and request Id</p>
+			<form id="accept_requestForm">
+				<p id="acceptFlash"></p>
+				<input id="acceptRide_Id" class="requestInput" type="number" placeholder="ride id">
+				<input id="requestId" class="requestInput" type="number" placeholder="request id"><br>
+				<input id="acceptButton" class="btn" type="submit" value="accept">
+				<!--<input id="rejectButton" class="btn" type="submit" value="reject">-->
+			</form>
+		</div>
 
 				<form action="addride.html">
 					<button>Add Ride</button>
 				</form>
 		</div>
-	</div>
-	</div>
+
+
 
 	<footer>
 		<li><a href="login_form.html">Logout</a></li>

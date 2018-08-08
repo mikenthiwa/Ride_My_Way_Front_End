@@ -44,6 +44,7 @@ function requestedRides(e) {
     })
         .then(res => res.json())
         .then(data => {
+            console.log(data);
             tableheader = `<th> Request Id </th>
                              <th> Username </th>
                              <th> Pick up point </th>
@@ -80,6 +81,8 @@ function acceptRide(e) {
         headers: {'Content-Type': 'application/json', "x-access-token": window.localStorage.getItem("x-access-token")}
     })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            document.getElementById('acceptFlash').innerHTML = data["msg"]
+        })
 
 }

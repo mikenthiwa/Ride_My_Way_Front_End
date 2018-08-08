@@ -19,8 +19,9 @@
 				</div>
 					<ul>
 						<li><a href="dashboard.html">Dashboard</a></li>
-						<li><a href="myRequests.html">myRides</a></li>
-						<li class="active"><a href="driver_profile.html">Profile</a></li>
+						<li><a href="addride.html">add ride</a></li>
+						<li><a href="myRequests.html">Requests</a></li>
+						<li class="active" id="profile"><a href="driver_profile.html">Profile</a></li>
 						<li><a href="login_form.html">Logout</a></li>
 					</ul>
 			</div>
@@ -28,33 +29,11 @@
 	
 	<div class="clear"></div>
 	<div class="container">
-		<div class="center">
+		<div class="profileCenter">
 			<h2>Rides Given</h2>
 			<table class="ridetable">
-				<thead>
-					<th width="40%">Routes</th>
-					<th width="30%">Driver</th>
-					<th width="10%">Time</th>
-					<th width="20%">Charge (Ksh)</th>
-				</thead>
-				<tbody>
-					<td>Syokimau - Nairobi</td>
-					<td><a href="driver_profile.html">Micheal Mutua</a></td>
-					<td>7:00am</td>
-					<td>600</td>
-				</tbody>
-				<tbody>
-					<td>Westlands - Town</td>
-					<td><a href="driver_profile.html">Michael Mutua</a></td>
-					<td>10:00am</td>
-					<td>200</td>
-				</tbody>
-				<tbody>
-					<td>Buruburu - Thika</td>
-					<td>Michael Mutua</td>
-					<td>10:00am</td>
-					<td>500</td>
-				</tbody>
+				<thead id="tableHeader"></thead>
+				<tbody id="myRides"></tbody>
 			</table>
 		</div>
 	</div>
@@ -67,4 +46,7 @@
         
 
 </body>
+
+<script src="profile.js"></script>
+
 </html>
