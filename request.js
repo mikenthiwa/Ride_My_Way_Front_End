@@ -3,7 +3,7 @@ document.getElementById('requestForm').addEventListener('submit', requestRide);
 function requestRide(e) {
     e.preventDefault();
 
-    let ride_id = document.getElementById('rideId').value;
+    let ride_id = document.getElementById('requestRideId').value;
     let pick_ip_point = document.getElementById('pickUpPoint').value;
     let time = document.getElementById('time').value;
 
@@ -17,6 +17,6 @@ function requestRide(e) {
         body: JSON.stringify({"pickup_point": pick_ip_point, "time": time})
     })
         .then(res => res.json())
-        .then(data => {document.getElementById('flash').innerHTML=data["msg"]})
+        .then(data => {document.getElementById('requestflash').innerHTML=data["msg"]})
 }
 
