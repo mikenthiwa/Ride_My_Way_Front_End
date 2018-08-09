@@ -15,7 +15,6 @@ fetch('http://127.0.0.1:5000/api/v3/auth/login', {
     .then(data => {
        if (data["msg"]){
            document.getElementById('flash').innerHTML = data["msg"]
-
        }
        if (data["login successful"]){
            window.localStorage.setItem("x-access-token", data["login successful"]["token"]);
