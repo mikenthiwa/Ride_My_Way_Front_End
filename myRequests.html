@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="static/css/index.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
@@ -39,28 +39,16 @@
 					<input id="rideId" class="requestInput" type="number" placeholder="ride id">
 					<input id="requestedRideButton" class="btn" type="submit" value="filter">
 				</form>
+				<p id="acceptFlash"></p>
+
 				<table class="requesttable">
 					<tr id="requestTableHeaders"></tr>
 					<tbody class="row" id="requestData"></tbody>
 				</table>
 		</div>
 
-		<div id="accept_requestDiv">
-			<p>To accept or reject a ride, enter the ride<br> and request Id</p>
-			<form id="accept_requestForm">
-				<p id="acceptFlash"></p>
-				<input id="acceptRide_Id" class="requestInput" type="number" placeholder="ride id">
-				<input id="requestId" class="requestInput" type="number" placeholder="request id"><br>
-				<input id="acceptButton" class="btn" type="submit" value="accept">
-				<!--<input id="rejectButton" class="btn" type="submit" value="reject">-->
-			</form>
-		</div>
 
-				<form action="addride.html">
-					<button>Add Ride</button>
-				</form>
-		</div>
-
+	</div>
 
 
 	<footer>
@@ -79,7 +67,7 @@
 
 	</script>
 
-	<script src="requested_rides.js"></script>
+	<script src="static/js/requested_rides.js"></script>
 
 </body>
 </html>

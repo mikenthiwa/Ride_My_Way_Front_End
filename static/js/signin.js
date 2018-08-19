@@ -5,7 +5,7 @@ function register(e) {
     let email = document.getElementById('loginEmail').value;
     let password = document.getElementById('loginPassword').value;
 
-fetch('http://127.0.0.1:5000/api/v3/auth/login', {
+fetch('https://ridemywayapiv-3.herokuapp.com/api/v3/auth/login', {
     method: 'POST',
     mode: 'cors',
     headers: {'Content-Type': 'application/json'},

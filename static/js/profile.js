@@ -4,7 +4,7 @@ document.getElementById('profile').addEventListener('click', ridesOffered);
 function ridesOffered(e) {
     e.preventDefault();
 
-    fetch(`http://127.0.0.1:5000/api/v3/driver/rides`, {
+    fetch(`https://ridemywayapiv-3.herokuapp.com/api/v3/driver/rides`, {
         method: 'GET',
         mode: 'cors',
         headers: {'Content-Type': 'application/json', "x-access-token": window.localStorage.getItem("x-access-token")}

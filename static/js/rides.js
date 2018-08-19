@@ -1,3 +1,4 @@
+
 window.addEventListener('load', getRides);
 document.getElementById('rides').addEventListener('click', getRides);
 
@@ -5,7 +6,7 @@ document.getElementById('rides').addEventListener('click', getRides);
 function getRides(e) {
     e.preventDefault();
 
-    fetch('http://127.0.0.1:5000/api/v3/rides', {
+    fetch('https://ridemywayapiv-3.herokuapp.com/api/v3/rides', {
          headers: {'Content-Type': 'application/json', "x-access-token": window.localStorage.getItem("x-access-token")}
     })
         .then(res => res.json())
@@ -14,28 +15,39 @@ function getRides(e) {
                 document.getElementById('rideOffered').innerHTML = `<p style="color: white; padding: 10px; font-size: large">${data["msg"]}</p>`
             }
             let tableHeaders = `<th> Route </th>
-					 <th> Ride Id </th>
 					 <th> Driver Name </th>
 					 <th> Registration plate </th>
 					 <th> Vehicle Model </th>
 					 <th> Vehicle Capacity </th>
 					 <th> Status </th>`;
+
             let routes = '';
             data.forEach(function (route) {
-                routes += `<a href="myRequests.html"><tr class="breakrow"> 
+                routes += `<a href="../../myRequests.html"><tr class="breakrow"> 
                                                 <td>${route.route}</td>
-                                                <td id="data">${route.ride_id}</td>
                                                 <td>${route.driver}</td>
                                                 <td>${route.registration_plate}</td>
                                                 <td>${route.vehicle_model}</td>
                                                 <td>${route.vehicle_capacity}</td>
                                                 <td>${route.status}</td>
-                            </tr></a>         
+                                                <td data-id=${route.ride_id} class="viewRide"><button class="viewRideBtn">View</button></td></tr></a> 
                 `;
 
                 });
+
             document.getElementById('table_headers').innerHTML = tableHeaders;
             document.getElementById('rideOffered').innerHTML = routes;
+
+            let button = document.getElementsByClassName('viewRideBtn');
+            for (let i=0; i<button.length; i++){
+                button[i].addEventListener('click', getRide)
+            }
         })
 
+
+
+
+
 }
+
+

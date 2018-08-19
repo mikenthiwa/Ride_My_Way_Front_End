@@ -100,7 +100,7 @@ hr{
 .container{
 	padding: 0;
 	margin: 0;
-	background-image: url(images/index1.jpg);
+	background-image: url(../../images/index1.jpg);
 	background-size: cover;
 	background-size: 100% 100%;
 	padding-top: 5px;
@@ -108,12 +108,11 @@ hr{
 }
 
 .center {
-    /*margin: auto;*/
-	float: right;
+    margin: 0 auto;
     width: 65%;
     margin-top: 10px;
 	text-align: center;
-	margin-right: 1em;
+	/*margin-right: 1em;*/
 }
 
 
@@ -156,8 +155,6 @@ table td{
 table tbody .metadata{
 	display: none;
 }
-
-
 
 .ridetable td{
 	padding: 0 2px;
@@ -206,15 +203,7 @@ table tbody .metadata{
 
 }
 
-#getRideInput{
-	height: 25px;
-	width: 10%;
-	margin-bottom: 10px;
-	border: none;
-	border-radius: 2px;
-	padding: 2px;
 
-}
 
 #getRideButton{
 	width: 15%;
@@ -254,11 +243,11 @@ table tbody .metadata{
 	background-color: darkblue;
 }
 
-#rideDiv{
-	margin-left: 28.5em;
-	margin-top: -22em;
-	width: 40%;
-}
+/*#rideDiv{*/
+	/*margin-left: 28.5em;*/
+	/*margin-top: -22em;*/
+	/*width: 40%;*/
+/*}*/
 #rideDetails{
 	width: 50%;
 	text-align: left;
@@ -266,9 +255,7 @@ table tbody .metadata{
 	letter-spacing: 1px;
 }
 
-fieldset{
-	border-radius: 5px;
-}
+
 #rideDiv legend{
 	background-color: #000;
     color: #fff;
@@ -276,11 +263,7 @@ fieldset{
 	font-size: 17px;
 	font-family: roboto;
 }
-#rideDiv .rideData{
-	border-bottom: 1px solid #6C6C6C;
-	width: 100%;
-	padding: 5px 0;
-}
+
 fieldset label{
 	color: white;
 	letter-spacing: 2px;
@@ -364,10 +347,7 @@ footer p.copyright {
 
 }
 
-/*#requestRidesForm .requestButton{*/
-    /*width: 10%;*/
-    /*margin-right: 10px;*/
-/*}*/
+
 
 #accept_requestForm .requestButton{
     width: 10%;
@@ -450,7 +430,7 @@ footer p.copyright {
 	margin-right: 1em;
 }
 
-#accept_requestDiv #acceptFlash{
+#acceptFlash{
 	font-size: 16px;
 	color: green;
 }
@@ -513,5 +493,38 @@ footer p.copyright {
 	box-shadow: 0 15px 25px rgba(0,0,0,.5);
 
 }
+
+/*.....................................................*/
+/* View ride.html */
+
+.viewRideCenter{
+	margin: 5em auto;
+	width: 65%;
+}
+
+fieldset{
+	border-radius: 5px;
+}
+
+.viewRideCenter .rideData{
+	border-bottom: 1px solid #6C6C6C;
+	width: 100%;
+	padding: 1.8em 0;
+}
+
+.viewRideCenter legend{
+	background-color: #000;
+    color: yellow;
+    padding: 3px 6px;
+	font-size: 25px;
+	font-family: roboto;
+}
+
+#requestFlash{
+	color: green;
+	text-align: center;
+}
+
+
 
 

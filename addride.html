@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="static/css/index.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +22,7 @@
 						<li><a href="dashboard.html">Dashboard</a></li>
 						<li class="active"><a href="addride.html">add ride</a></li>
 						<li><a href="myRequests.html">Requests</a></li>
-						<li><a href="profile.html">Profile</a></li>
+						<li><a href="driver_profile.html">Profile</a></li>
 						<li><a href="login_form.html">Logout</a></li>
 					</ul>
 			</div>
@@ -35,7 +35,10 @@
 			<h3 id="flash"></h3>
 			<form id="addRideForm">
 				<div class="inputBox">
-					<input id="rideRoute" type="text" name="" required="" placeholder="Routes">
+					<input id="source" type="text" name="" required="" placeholder="source">
+				</div>
+				<div class="inputBox">
+					<input id="destination" type="text" name="" required="" placeholder="destination">
 				</div>
 
 				<div class="inputBox">
@@ -60,7 +63,7 @@
 		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
 	</footer>
 
-	<script src="postride.js"></script>
+	<script src="static/js/postride.js"></script>
 
 </body>
 </html>
