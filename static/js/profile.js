@@ -1,47 +1,39 @@
-window.addEventListener('load', ridesOffered);
-document.getElementById('profile').addEventListener('click', ridesOffered);
+window.addEventListener('load', rides_taken);
+document.getElementById('profile').addEventListener('click', rides_taken);
 
-function ridesOffered(e) {
+function rides_taken(e) {
     e.preventDefault();
 
-    fetch(`https://ridemywayapiv-3.herokuapp.com/api/v3/driver/rides`, {
+    fetch(`https://ridemywayapiv-3.herokuapp.com/api/v3/profile`, {
         method: 'GET',
         mode: 'cors',
         headers: {'Content-Type': 'application/json', "x-access-token": window.localStorage.getItem("x-access-token")}
+
     })
         .then(res => res.json())
         .then(data => {
             if (data["msg"]){
                 document.getElementById('rideOffered').innerHTML = `<p style="color: white; padding: 10px; font-size: large">${data["msg"]}</p>`
             }
-            let tableheaders = `<tr>
-						<td>Ride Id</td>
-						<td>Route</td>
-						<td>Driver</td>
-						<td>Registration Plate</td>
-						<td>Vehicle Model</td>
-						<td>Vehicle Capacity</td>
-						<td>Status</td>
-					</tr>`;
-
             let rides = '';
-
+            let tableheaders = `<tr>
+						<td>Pick up Point</td>
+						<td>username</td>
+						
+					</tr>`;
+            console.log(data)
             data.forEach(function (ride) {
                 rides += `
-                <tr>
-                    <td>${ride.ride_id}</td>
-                    <td>${ride.route}</td>
-                    <td>${ride.driver}</td>
-                    <td>${ride.registration_plate}</td>
-                    <td>${ride.vehicle_model}</td>
-                    <td>${ride.vehicle_capacity}</td>
-                    <td>${ride.status}</td>
-                </tr>
-            `
+                    <tr>
+                        
+                        <td>${ride.pickup_point}</td>
+                        <td>${ride.username}</td>
+                        
+                    </tr>
+                
+                `
             });
-            document.getElementById('tableHeader').innerHTML = tableheaders;
-            document.getElementById('myRides').innerHTML = rides;
+            document.getElementById('tableheader').innerHTML = tableheaders
+            document.getElementById('myRides').innerHTML = rides
         })
-
 }
-
