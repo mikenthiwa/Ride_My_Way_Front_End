@@ -1,355 +1,340 @@
-body{
-	padding: 0;
-	margin: 0;
-	background-color: #fff8b2;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff8b2;
 }
 
-.logo{
-	float: left;
-	height: auto;
-	font-weight: 500;
+.logo {
+    float: left;
+    height: auto;
+    font-weight: 500;
 }
 
-.logo li{
-	color: blue;
-	font-family: 'Russo One', sans-serif;
-	letter-spacing: 1px;
-	font-size: 25px;
-	font-weight: 700;
+.logo li {
+    color: blue;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.main ul{
-	float: right;
-	list-style-type: none;
+.main ul {
+    float: right;
+    list-style-type: none;
 }
 
-ul input{
-	padding: 3px;
-	border-radius: 3px;
-	border: 1px solid grey;
+ul input {
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid grey;
 }
 
-ul li{
-	display: inline-block;
+ul li {
+    display: inline-block;
 }
 
-ul li a{
-	text-decoration: none;
-	color: blue;
-	border-radius: 10px;
-	padding: 5px 20px;
-	border: 1px solid transparent;
-	transition: 0.6s ease;
-	font-weight: 500;
-	font-family: roboto;
-	
+ul li a {
+    text-decoration: none;
+    color: blue;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-weight: 500;
+    font-family: roboto;
+
 }
 
-ul li a:hover{
-	background-color: yellow;
-	color: #000;
+ul li a:hover {
+    background-color: yellow;
+    color: #000;
 }
 
-ul li.active a{
-	background-color: #fff;
-	color: #000;
+ul li.active a {
+    background-color: #fff;
+    color: #000;
 }
 
-.main{
-	max-width: 1200px;
-	margin: auto;
+.main {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.clear{
-	clear: both;
+.clear {
+    clear: both;
 }
 
-.center h2{
-	color: #f2e318;
-	font-size: xx-large;
-	font-family: "Times New Roman";
-	letter-spacing: 3px;
-	text-shadow: 1px 1px #f7ce04;
+.center h2 {
+    color: #f2e318;
+    font-size: xx-large;
+    font-family: "Times New Roman";
+    letter-spacing: 3px;
+    text-shadow: 1px 1px #f7ce04;
 }
 
-#rideTable{
-	padding: 3px 0;
+#rideTable {
+    padding: 3px 0;
 }
 
-hr{
-	margin-bottom: 1.5em;
+hr {
+    margin-bottom: 1.5em;
 }
 
-.center p{
-	color: #ffffff;
-	font-family: roboto;
-	letter-spacing: 1px;
+.center p {
+    color: #ffffff;
+    font-family: roboto;
+    letter-spacing: 1px;
 }
 
-.center .title_description{
-	color: yellow;
-	font-weight: 100;
+.center .title_description {
+    color: yellow;
+    font-weight: 100;
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.container{
-	padding: 0;
-	margin: 0;
-	background-image: url(../../images/index1.jpg);
-	background-size: cover;
-	background-size: 100% 100%;
-	padding-top: 5px;
-  	padding-bottom: 150px;
+.container {
+    padding: 0;
+    margin: 0;
+    background-image: url(../../images/index1.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+    padding-top: 5px;
+    padding-bottom: 150px;
 }
 
 .center {
     margin: 0 auto;
     width: 65%;
     margin-top: 10px;
-	text-align: center;
-	/*margin-right: 1em;*/
+    text-align: center;
+    /*margin-right: 1em;*/
 }
 
-
-
-.center h1{
-	text-align: center;
-
-}
-
-
-
-table{
-	text-align: center;
-	font-family: roboto;
-	box-sizing: border-box;
-	letter-spacing: 1px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-table th{
-	color: yellow;
-	font-weight: 100;
-}
-
-table tr{
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
-}
-
-table tbody tr:hover{
-	background-color: rgba(0,0,0,.5);
-}
-
-
-table td{
-	color: white;
-	
-}
-
-table tbody .metadata{
-	display: none;
-}
-
-.ridetable td{
-	padding: 0 2px;
-	padding: 8px;
-
+.center h1 {
+    text-align: center;
 
 }
 
-.ridetable a{
-	color: white;
-	text-decoration: none;
-
-}
-.ridetable a:hover{
-	color: #f2e318;
-	text-decoration: underline;
-}
-
-.profiletable{
-	width: 600px;
+table {
+    text-align: center;
+    font-family: roboto;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.center button{
-	text-align: center;
-	padding: 15px 40px;
-	margin: 10px;
-	background-color: green;
-	border: none;
-	border-radius: 10px;
-	font-size: 16px;
-	font-family: roboto;
-	letter-spacing: 1px;
-	color: white;
-	cursor: pointer;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
-	outline: none;
-	
+table th {
+    color: yellow;
+    font-weight: 100;
 }
 
-
-#flash{
-	color: green;
+table tr {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
 }
-.center .inputBox {
-	position: relative;
+
+table tbody tr:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+table td {
+    color: white;
 
 }
 
+table tbody .metadata {
+    display: none;
+}
 
-
-#getRideButton{
-	width: 15%;
+.ridetable td {
+    padding: 0 2px;
+    padding: 8px;
 
 }
 
-#ridesDiv{
-	margin: 8em 0 0 1.5em;
-}
-
-#ridesDiv p{
-	color: white;
-	font-size: 18px;
-	font-family: roboto;
-	letter-spacing: 2px;
+.ridetable a {
+    color: white;
+    text-decoration: none;
 
 }
 
-
-
-.btn{
-	background: blue;
-	height: 2.5em;
-	border-radius: 6px;
-	border-color: orange;
-	box-shadow: 2px 2px 2px 1px #73767D;
-	letter-spacing: 1px;
-	color: white;
-	cursor: pointer;
-}
-#getRideForm .btn{
-	cursor: pointer;
-
+.ridetable a:hover {
+    color: #f2e318;
+    text-decoration: underline;
 }
 
-.btn:hover{
-	background-color: darkblue;
+.profiletable {
+    width: 600px;
+}
+
+.center button {
+    text-align: center;
+    padding: 5px 30px;
+    /*margin: 10px;*/
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    outline: none;
+
+}
+
+#flash {
+    color: green;
+}
+
+/*.center .inputBox {*/
+    /*position: relative;*/
+
+/*}*/
+
+#getRideButton {
+    width: 15%;
+
+}
+
+#ridesDiv {
+    margin: 8em 0 0 1.5em;
+}
+
+#ridesDiv p {
+    color: white;
+    font-size: 18px;
+    font-family: roboto;
+    letter-spacing: 2px;
+
+}
+
+.btn {
+    background: blue;
+    height: 2.5em;
+    border-radius: 6px;
+    border-color: orange;
+    box-shadow: 2px 2px 2px 1px #73767D;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+#getRideForm .btn {
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: darkblue;
 }
 
 /*#rideDiv{*/
-	/*margin-left: 28.5em;*/
-	/*margin-top: -22em;*/
-	/*width: 40%;*/
+/*margin-left: 28.5em;*/
+/*margin-top: -22em;*/
+/*width: 40%;*/
 /*}*/
-#rideDetails{
-	width: 50%;
-	text-align: left;
-	height: 20px;
-	letter-spacing: 1px;
+#rideDetails {
+    width: 50%;
+    text-align: left;
+    height: 20px;
+    letter-spacing: 1px;
 }
 
-
-#rideDiv legend{
-	background-color: #000;
+#rideDiv legend {
+    background-color: #000;
     color: #fff;
     padding: 3px 6px;
-	font-size: 17px;
-	font-family: roboto;
+    font-size: 17px;
+    font-family: roboto;
 }
 
-fieldset label{
-	color: white;
-	letter-spacing: 2px;
-	font-size: 17px;
-	font-family: roboto;
+fieldset label {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-family: roboto;
 }
-
 
 footer {
-  padding-left: 10px;
-	padding-top: 50px;   
+    padding-left: 10px;
+    padding-top: 50px;
 }
 
-footer li{	
-	list-style-type: none;
-	padding: 20px;
+footer li {
+    list-style-type: none;
+    padding: 20px;
 }
 
-footer li a{
-	text-decoration: none;
-	font-family: roboto;
-	font-weight: 700;
+footer li a {
+    text-decoration: none;
+    font-family: roboto;
+    font-weight: 700;
 }
 
 footer p.copyright {
-	text-align: center;
-	font-family: roboto;
+    text-align: center;
+    font-family: roboto;
 }
 
 /* requestRide.html */
 
-#requestDiv{
-	margin-top: 3em;
+#requestDiv {
+    margin-top: 3em;
 }
 
-.input_box{
-	text-align: center;
-	margin: 20px 0;
+.input_box {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.input_box label{
-	color: white;
-	font-size: 20px;
-	margin-right: 5px;
+.input_box label {
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
 }
 
-.input_box input{
-	height: 25px;
-	border-radius: 2px;
-	border: none;
-	padding: 2px;
+.input_box input {
+    height: 25px;
+    border-radius: 2px;
+    border: none;
+    padding: 2px;
 
 }
 
-.input_box #time{
-	margin-left: 23px;
+.input_box #time {
+    margin-left: 23px;
 }
 
-
-
-#flash{
+#flash {
     color: green;
 }
 
-
-
-#requestRidesForm{
+#requestRidesForm {
     margin-bottom: 10px;
 }
 
-.requestInput{
+.requestInput {
     height: 25px;
-	width: 10%;
-	margin-bottom: 10px;
-	border: none;
-	border-radius: 2px;
-	padding: 2px;
-}
-#requestForm #requestflash{
-	color: green;
-
+    width: 10%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
 }
 
+#requestForm #requestflash {
+    color: green;
 
+}
 
-#accept_requestForm .requestButton{
+#accept_requestForm .requestButton {
     width: 10%;
     margin-right: 10px;
 }
@@ -360,169 +345,169 @@ footer p.copyright {
 }
 
 /* dashboard.html */
-.dashboardCenter{
-	margin: 20px auto;
+.dashboardCenter {
+    margin: 20px auto;
     width: 65%;
     margin-top: 10px;
-	text-align: center;
+    text-align: center;
 
 }
 
-.dashboardCenter h2{
-	text-align: center;
-	color: yellow;
+.dashboardCenter h2 {
+    text-align: center;
+    color: yellow;
 
 }
 
-.dashboardCenter p{
-	color: white;
-	font-family: roboto;
-	letter-spacing: 3px;
+.dashboardCenter p {
+    color: white;
+    font-family: roboto;
+    letter-spacing: 3px;
 }
 
 /*...........................................................................*/
 
 /* myRequests.html*/
 
-.requestCenter{
-	margin-left: 5em;
-	font-family: roboto;
+.requestCenter {
+    margin-left: 5em;
+    font-family: roboto;
 }
 
-.requestCenter h2{
-	color: yellow;
-	font-family: roboto;
-	letter-spacing: 2px;
-
-}
-
-.requestCenter p{
-	color: white;
-	letter-spacing: 2px;
-}
-
-.requestCenter .requesttable{
-	width: 50%;
-}
-
-.requestCenter .requesttable td{
-	padding: 8px;
-}
-
-#requestRidesForm{
-	margin-top: 4em;
-}
-
-#accept_requestDiv{
-	margin-left: 53em;
-	margin-top: -15em;
+.requestCenter h2 {
+    color: yellow;
+    font-family: roboto;
+    letter-spacing: 2px;
 
 }
 
-#accept_requestDiv p{
-	letter-spacing: 2px;
-	color: white;
-	font-family: roboto;
+.requestCenter p {
+    color: white;
+    letter-spacing: 2px;
 }
 
-#accept_requestDiv .requestInput{
-	width: 6em;
-	margin-right: 1em;
+.requestCenter .requesttable {
+    width: 50%;
 }
 
-#acceptFlash{
-	font-size: 16px;
-	color: green;
+.requestCenter .requesttable td {
+    padding: 8px;
+}
+
+#requestRidesForm {
+    margin-top: 4em;
+}
+
+#accept_requestDiv {
+    margin-left: 53em;
+    margin-top: -15em;
+
+}
+
+#accept_requestDiv p {
+    letter-spacing: 2px;
+    color: white;
+    font-family: roboto;
+}
+
+#accept_requestDiv .requestInput {
+    width: 6em;
+    margin-right: 1em;
+}
+
+#acceptFlash {
+    font-size: 16px;
+    color: green;
 }
 
 /*...........................................................*/
 
 /* Profile.html */
 
-.profileCenter{
-	margin: auto;
-	width: 65%;
+.profileCenter {
+    margin: auto;
+    width: 65%;
     margin-top: 10px;
-	text-align: center;
+    text-align: center;
 }
 
-.profileCenter h2{
-	color: yellow;
-	font-weight: 100;
+.profileCenter h2 {
+    color: yellow;
+    font-weight: 100;
 }
 
 /*.................................................................*/
 
 /* addride.html */
 .addRideCenter {
-	margin: auto;
-	width: 65%;
-	margin-top: 10px;
-	text-align: center;
+    margin: auto;
+    width: 65%;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.addRideCenter .inputBox input{
-	width: 100%;
-	padding: 10px 10px;
-	font-size: 16px;
-	color: black;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	outline: none;
-	font-family: roboto;
+.addRideCenter .inputBox input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: none;
+    font-family: roboto;
 }
 
-.addRideCenter h2{
-	color: yellow;
-	font-weight: 100;
+.addRideCenter h2 {
+    color: yellow;
+    font-weight: 100;
 }
 
-.addRideCenter input[type="submit"]{
-	background: transparent;
-	border: none;
-	outline: none;
-	color: #fff;
-	background: green;
-	width: 100%;
-	padding: 10px 10px;
-	cursor: pointer;
-	border-radius: 5px;
-	font-family: roboto;
-	font-size: 20px;
-	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+.addRideCenter input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: green;
+    width: 100%;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: roboto;
+    font-size: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
 
 }
 
 /*.....................................................*/
 /* View ride.html */
 
-.viewRideCenter{
-	margin: 5em auto;
-	width: 65%;
+.viewRideCenter {
+    margin: 5em auto;
+    width: 65%;
 }
 
-fieldset{
-	border-radius: 5px;
+fieldset {
+    border-radius: 5px;
 }
 
-.viewRideCenter .rideData{
-	border-bottom: 1px solid #6C6C6C;
-	width: 100%;
-	padding: 1.8em 0;
+.viewRideCenter .rideData {
+    border-bottom: 1px solid #6C6C6C;
+    width: 100%;
+    padding: 1.8em 0;
 }
 
-.viewRideCenter legend{
-	background-color: #000;
+.viewRideCenter legend {
+    background-color: #000;
     color: yellow;
     padding: 3px 6px;
-	font-size: 25px;
-	font-family: roboto;
+    font-size: 25px;
+    font-family: roboto;
 }
 
-#requestFlash{
-	color: green;
-	text-align: center;
+#requestFlash {
+    color: green;
+    text-align: center;
 }
 
 
