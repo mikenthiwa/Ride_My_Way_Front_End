@@ -2,72 +2,72 @@
 <html>
 <head>
     <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<link rel="stylesheet" href="static/css/index.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
 </head>
 <body>
-	<header>
-			<div class="main">
-				<div class="logo">
-					<ul>
-						<li>Ride-My-Way</li>
-					</ul>
-				</div>
-					<ul>
-						<li><a href="dashboard.html">Dashboard</a></li>
-						<li><a href="addride.html">add ride</a></li>
-						<li class="active"><a href="myRequests.html">Requests</a></li>
-						<li><a href="driver_profile.html">Profile</a></li>
-						<li><a href="Login_Form.html">Logout</a></li>
-					</ul>
-			</div>
-	</header>
-	
-	<div class="clear"></div>
-	<div class="container">
-		<div class="requestCenter">
-			<h2>Requested rides</h2>
-			<p>Ride_My_Way allows you to view all the rides that have been requested<br>
-				after creating them</p>
-				<form id="requestRidesForm">
-					<p>You can also filter your requests by ID</p>
-					<input id="rideId" class="requestInput" type="number" placeholder="ride id">
-					<input id="requestedRideButton" class="btn" type="submit" value="filter">
-				</form>
-				<p id="acceptFlash"></p>
+<header>
+    <div class="main">
+        <div class="logo">
+            <ul>
+                <li>Ride-My-Way</li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="addride.html">add ride</a></li>
+            <li class="active"><a href="myRequests.html">Requests</a></li>
+            <li><a href="driver_profile.html">Profile</a></li>
+            <li><a href="Login_Form.html">Logout</a></li>
+        </ul>
+    </div>
+</header>
 
-				<table class="requesttable">
-					<tr id="requestTableHeaders"></tr>
-					<tbody class="row" id="requestData"></tbody>
-				</table>
-		</div>
+<div class="clear"></div>
+<div class="container">
+    <div class="requestCenter">
+        <h2>Requested rides</h2>
+        <p>Ride_My_Way allows you to view all the rides that have been requested<br>
+            after creating them</p>
+        <form id="requestRidesForm">
+            <p>You can also filter your requests by ID</p>
+            <input id="rideId" class="requestInput" type="number" placeholder="ride id">
+            <input id="requestedRideButton" class="btn" type="submit" value="filter">
+        </form>
+        <p id="acceptFlash"></p>
 
-
-	</div>
+        <table class="requesttable">
+            <tr id="requestTableHeaders"></tr>
+            <tbody class="row" id="requestData"></tbody>
+        </table>
+    </div>
 
 
-	<footer>
-		<li><a href="login_form.html">Logout</a></li>
-		<p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
-	</footer>
-	
-	
-	<script type="text/javascript">
-		
-	
-		$(".accept").active(function(){
-				//$(this).nextUntil('td.accept').css("color", "red" );
-			$("td.accept").css({"color": "red"});
-		})
+</div>
 
-	</script>
 
-	<script src="static/js/requested_rides.js"></script>
+<footer>
+    <li><a href="login_form.html">Logout</a></li>
+    <p class="copyright text-muted small">Copyright © 2018. All Rights Reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+
+
+    $(".accept").active(function () {
+        //$(this).nextUntil('td.accept').css("color", "red" );
+        $("td.accept").css({"color": "red"});
+    })
+
+</script>
+
+<script src="static/js/requested_rides.js"></script>
 
 </body>
 </html>

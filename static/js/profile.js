@@ -12,7 +12,7 @@ function rides_taken(e) {
     })
         .then(res => res.json())
         .then(data => {
-            if (data["msg"]){
+            if (data["msg"]) {
                 document.getElementById('rideOffered').innerHTML = `<p style="color: white; padding: 10px; font-size: large">${data["msg"]}</p>`
             }
             let rides = '';

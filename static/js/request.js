@@ -1,4 +1,3 @@
-
 document.getElementById('joinButton').addEventListener('click', requestRide);
 
 function requestRide(e) {

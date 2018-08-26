@@ -4,67 +4,67 @@
     <meta charset="UTF-8">
     <title>Ride</title>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-	<link rel="stylesheet" href="static/css/index.css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
 
-	<header>
-		<div class="main">
-			<div class="logo">
-				<ul>
-					<li>Ride-My-Way</li>
-				</ul>
-			</div>
-				<ul>
-					<li><a href="home_user.html">Rides</a></li>
-					<li><a href="profile.html">Profile</a></li>
-					<li><a href="login_form.html">Logout</a></li>
-				</ul>
-		</div>
-	</header>
+<header>
+    <div class="main">
+        <div class="logo">
+            <ul>
+                <li>Ride-My-Way</li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="home_user.html">Rides</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login_form.html">Logout</a></li>
+        </ul>
+    </div>
+</header>
 
-	<div class="clear"></div>
+<div class="clear"></div>
 
-	<div class="container">
-		<div class="viewRideCenter">
+<div class="container">
+    <div class="viewRideCenter">
 
-			<fieldset>
-			<legend>Ride details</legend>
-				<p id="requestFlash"></p>
-			<div class="rideData">
-				<label >Ride Id</label> <label id="rideID" style="margin-left: 15em"></label>
-			</div>
-			<div class="rideData">
-				<label>Route</label><label id="route" style="margin-left: 10em"></label>
-			</div>
-			<div class="rideData">
-				<label>Driver</label><label id="driver" style="margin-left: 14em"></label>
-			</div>
-			<div class="rideData">
-				<label>Vehicle Model</label><label id="vehicleModel" style="margin-left: 8em"></label>
-			</div>
-			<div class="rideData">
-				<label>Vehicle Capacity</label><label id="vehicleCapacity" style="margin-left: 9em"></label>
-			</div>
-			<div class="rideData">
-				<label>Status</label><label id="status" style="margin-left: 13em"></label>
-			</div>
-			<div id="joinDiv">
-				<form>
-					<input id="pickUpPoint">
-					<button id="joinButton">Join</button>
-				</form>
-			</div>
+        <fieldset>
+            <legend>Ride details</legend>
+            <p id="requestFlash"></p>
+            <div class="rideData">
+                <label>Ride Id</label> <label id="rideID" style="margin-left: 15em"></label>
+            </div>
+            <div class="rideData">
+                <label>Route</label><label id="route" style="margin-left: 10em"></label>
+            </div>
+            <div class="rideData">
+                <label>Driver</label><label id="driver" style="margin-left: 14em"></label>
+            </div>
+            <div class="rideData">
+                <label>Vehicle Model</label><label id="vehicleModel" style="margin-left: 8em"></label>
+            </div>
+            <div class="rideData">
+                <label>Vehicle Capacity</label><label id="vehicleCapacity" style="margin-left: 9em"></label>
+            </div>
+            <div class="rideData">
+                <label>Status</label><label id="status" style="margin-left: 13em"></label>
+            </div>
+            <div id="joinDiv">
+                <form>
+                    <input id="pickUpPoint">
+                    <button id="joinButton">Join</button>
+                </form>
+            </div>
 
-		</fieldset>
-		</div>
-	</div>
+        </fieldset>
+    </div>
+</div>
 </body>
 
 <script src="static/js/ride.js"></script>

@@ -1,5 +1,6 @@
 window.addEventListener('load', allRequests);
 document.getElementById('requestRidesForm').addEventListener('submit', requestedRides);
+
 // document.getElementById('accept_requestForm').addEventListener("submit", acceptRide);
 
 function allRequests(e) {
@@ -19,7 +20,7 @@ function allRequests(e) {
                              <th> Time </th>`;
             output = '';
             data.forEach(function (request) {
-                output +=`<tr><td>${request.request_id}</td>
+                output += `<tr><td>${request.request_id}</td>
                                <td>${request.ride_id}</td>
                                <td>${request.username}</td>
                                <td>${request.pickup_point}</td>
@@ -30,7 +31,7 @@ function allRequests(e) {
             document.getElementById('requestData').innerHTML = output;
 
             let button = document.getElementsByClassName('acceptRide');
-            for (let i = 0; i<button.length; i++){
+            for (let i = 0; i < button.length; i++) {
                 button[i].addEventListener('click', acceptRide)
             }
 

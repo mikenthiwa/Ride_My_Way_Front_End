@@ -1,6 +1,4 @@
-
 function getRide() {
-
 
 
     let ride = event.target.parentNode;
@@ -27,7 +25,7 @@ function getRide() {
         })
 }
 
-if (window.location.pathname.endsWith('View_ride.html')){
+if (window.location.pathname.endsWith('View_ride.html')) {
     console.log(localStorage.getItem('route'))
     document.getElementById('rideID').innerHTML = localStorage.getItem('ride_id');
     document.getElementById('route').innerHTML = localStorage.getItem('route');
